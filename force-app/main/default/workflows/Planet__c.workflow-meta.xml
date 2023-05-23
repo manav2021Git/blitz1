@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>ctx_field_update_1</fullName>
+        <field>Dominant_Life_Form__c</field>
+        <literalValue>Bacteria</literalValue>
+        <name>ctx field update 1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>ctx rule 1</fullName>
+        <actions>
+            <name>ctx_field_update_1</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Planet__c.Galaxy__c</field>
+            <operation>equals</operation>
+            <value>Eye of Sauron,Cigar Galaxy</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>ctx rule 2</fullName>
+        <actions>
+            <name>do_it</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <formula>Name != null</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <tasks>
+        <fullName>do_it</fullName>
+        <assignedTo>SVP_Customer_Experience</assignedTo>
+        <assignedToType>role</assignedToType>
+        <dueDateOffset>50</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>do it!</subject>
+    </tasks>
+</Workflow>
