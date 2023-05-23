@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>ctx_sharing_3</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>ctx sharing 3</label>
+        <sharedTo>
+            <roleAndSubordinates>SVP_Customer_Experience</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>Galaxy__c</field>
+            <operation>equals</operation>
+            <value>Cigar Galaxy,Eye of Sauron,Andromeda Galaxy</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>ctx_sharing_1</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>ctx sharing 1</label>
+        <sharedTo>
+            <role>SVP_Customer_Experience</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>SVP_Customer_Experience</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>ctx_sharing_2</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>ctx sharing 2</label>
+        <sharedTo>
+            <roleAndSubordinates>SVP_Customer_Experience</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <role>SVP_Customer_Experience</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>
