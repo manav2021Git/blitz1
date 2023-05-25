@@ -36,6 +36,16 @@
     <custom>true</custom>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Contact.T1Field4__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.T1Field5__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Planet__c.Dominant_Life_Form__c</field>
         <readable>true</readable>
     </fieldPermissions>
